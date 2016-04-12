@@ -14,6 +14,13 @@
 		2680AEF11CBD501300B12AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2680AEEF1CBD501300B12AD0 /* LaunchScreen.storyboard */; };
 		2680AEFC1CBD501300B12AD0 /* ZKAddrListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AEFB1CBD501300B12AD0 /* ZKAddrListTests.m */; };
 		2680AF071CBD501300B12AD0 /* ZKAddrListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF061CBD501300B12AD0 /* ZKAddrListUITests.m */; };
+		2680AF1A1CBD544700B12AD0 /* AddrListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF191CBD544700B12AD0 /* AddrListViewController.m */; };
+		2680AF231CBD560A00B12AD0 /* AddrDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF221CBD560A00B12AD0 /* AddrDetailViewController.m */; };
+		2680AF271CBD58B300B12AD0 /* AddrListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF251CBD58B300B12AD0 /* AddrListTableViewCell.m */; };
+		2680AF281CBD58B300B12AD0 /* AddrListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2680AF261CBD58B300B12AD0 /* AddrListTableViewCell.xib */; };
+		2680AF331CBD63BA00B12AD0 /* AddrDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF321CBD63BA00B12AD0 /* AddrDataModel.m */; };
+		2680AF3A1CBD672100B12AD0 /* AddrListEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF381CBD672100B12AD0 /* AddrListEditTableViewCell.m */; };
+		2680AF3B1CBD672100B12AD0 /* AddrListEditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2680AF391CBD672100B12AD0 /* AddrListEditTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,18 @@
 		2680AF021CBD501300B12AD0 /* ZKAddrListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKAddrListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2680AF061CBD501300B12AD0 /* ZKAddrListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKAddrListUITests.m; sourceTree = "<group>"; };
 		2680AF081CBD501300B12AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2680AF181CBD544700B12AD0 /* AddrListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddrListViewController.h; path = AddrTableView/AddrListViewController.h; sourceTree = "<group>"; };
+		2680AF191CBD544700B12AD0 /* AddrListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddrListViewController.m; path = AddrTableView/AddrListViewController.m; sourceTree = "<group>"; };
+		2680AF211CBD560A00B12AD0 /* AddrDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddrDetailViewController.h; path = AddrTableView/AddrDetailViewController.h; sourceTree = "<group>"; };
+		2680AF221CBD560A00B12AD0 /* AddrDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddrDetailViewController.m; path = AddrTableView/AddrDetailViewController.m; sourceTree = "<group>"; };
+		2680AF241CBD58B300B12AD0 /* AddrListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddrListTableViewCell.h; path = AddrTableView/AddrListTableViewCell.h; sourceTree = "<group>"; };
+		2680AF251CBD58B300B12AD0 /* AddrListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddrListTableViewCell.m; path = AddrTableView/AddrListTableViewCell.m; sourceTree = "<group>"; };
+		2680AF261CBD58B300B12AD0 /* AddrListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddrListTableViewCell.xib; path = AddrTableView/AddrListTableViewCell.xib; sourceTree = "<group>"; };
+		2680AF311CBD63BA00B12AD0 /* AddrDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddrDataModel.h; path = AddrDataModel/AddrDataModel.h; sourceTree = "<group>"; };
+		2680AF321CBD63BA00B12AD0 /* AddrDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddrDataModel.m; path = AddrDataModel/AddrDataModel.m; sourceTree = "<group>"; };
+		2680AF371CBD672100B12AD0 /* AddrListEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddrListEditTableViewCell.h; path = AddrTableView/AddrListEditTableViewCell.h; sourceTree = "<group>"; };
+		2680AF381CBD672100B12AD0 /* AddrListEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddrListEditTableViewCell.m; path = AddrTableView/AddrListEditTableViewCell.m; sourceTree = "<group>"; };
+		2680AF391CBD672100B12AD0 /* AddrListEditTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddrListEditTableViewCell.xib; path = AddrTableView/AddrListEditTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +117,8 @@
 		2680AEE01CBD501300B12AD0 /* ZKAddrList */ = {
 			isa = PBXGroup;
 			children = (
+				2680AF341CBD643200B12AD0 /* DataModel */,
+				2680AF141CBD538200B12AD0 /* AddrTableView */,
 				2680AEE41CBD501300B12AD0 /* AppDelegate.h */,
 				2680AEE51CBD501300B12AD0 /* AppDelegate.m */,
 				2680AEEA1CBD501300B12AD0 /* Main.storyboard */,
@@ -133,6 +154,32 @@
 				2680AF081CBD501300B12AD0 /* Info.plist */,
 			);
 			path = ZKAddrListUITests;
+			sourceTree = "<group>";
+		};
+		2680AF141CBD538200B12AD0 /* AddrTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2680AF371CBD672100B12AD0 /* AddrListEditTableViewCell.h */,
+				2680AF381CBD672100B12AD0 /* AddrListEditTableViewCell.m */,
+				2680AF391CBD672100B12AD0 /* AddrListEditTableViewCell.xib */,
+				2680AF211CBD560A00B12AD0 /* AddrDetailViewController.h */,
+				2680AF221CBD560A00B12AD0 /* AddrDetailViewController.m */,
+				2680AF181CBD544700B12AD0 /* AddrListViewController.h */,
+				2680AF191CBD544700B12AD0 /* AddrListViewController.m */,
+				2680AF241CBD58B300B12AD0 /* AddrListTableViewCell.h */,
+				2680AF251CBD58B300B12AD0 /* AddrListTableViewCell.m */,
+				2680AF261CBD58B300B12AD0 /* AddrListTableViewCell.xib */,
+			);
+			name = AddrTableView;
+			sourceTree = "<group>";
+		};
+		2680AF341CBD643200B12AD0 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				2680AF321CBD63BA00B12AD0 /* AddrDataModel.m */,
+				2680AF311CBD63BA00B12AD0 /* AddrDataModel.h */,
+			);
+			name = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +285,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2680AF3B1CBD672100B12AD0 /* AddrListEditTableViewCell.xib in Resources */,
+				2680AF281CBD58B300B12AD0 /* AddrListTableViewCell.xib in Resources */,
 				2680AEF11CBD501300B12AD0 /* LaunchScreen.storyboard in Resources */,
 				2680AEEE1CBD501300B12AD0 /* Assets.xcassets in Resources */,
 				2680AEEC1CBD501300B12AD0 /* Main.storyboard in Resources */,
@@ -265,7 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2680AF231CBD560A00B12AD0 /* AddrDetailViewController.m in Sources */,
+				2680AF271CBD58B300B12AD0 /* AddrListTableViewCell.m in Sources */,
+				2680AF1A1CBD544700B12AD0 /* AddrListViewController.m in Sources */,
 				2680AEE61CBD501300B12AD0 /* AppDelegate.m in Sources */,
+				2680AF331CBD63BA00B12AD0 /* AddrDataModel.m in Sources */,
+				2680AF3A1CBD672100B12AD0 /* AddrListEditTableViewCell.m in Sources */,
 				2680AEE31CBD501300B12AD0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +546,7 @@
 				2680AF0D1CBD501300B12AD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2680AF0E1CBD501300B12AD0 /* Build configuration list for PBXNativeTarget "ZKAddrListTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +555,7 @@
 				2680AF101CBD501300B12AD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2680AF111CBD501300B12AD0 /* Build configuration list for PBXNativeTarget "ZKAddrListUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +564,7 @@
 				2680AF131CBD501300B12AD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

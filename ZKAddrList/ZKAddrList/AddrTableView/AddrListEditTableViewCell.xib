@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddrListEditCell" rowHeight="88" id="KGk-i7-Jjw" customClass="AddrListEditTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="498" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="默认地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjg-W2-saq">
+                        <rect key="frame" x="38" y="33" width="52" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIM-fi-rrs">
+                        <rect key="frame" x="11" y="33" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="9Ed-iL-FXd"/>
+                            <constraint firstAttribute="height" constant="22" id="vTO-IU-d1Y"/>
+                        </constraints>
+                        <state key="normal" image="CheckBox_Unselected"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3x-GD-AJ5">
+                        <rect key="frame" x="340" y="33" width="75" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="dhl-1O-4ci"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="  编辑" image="Edit">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCv-4r-yqs">
+                        <rect key="frame" x="420" y="33" width="75" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="QPV-zk-NaF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="  删除" image="Delete"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="I3x-GD-AJ5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4jY-gJ-DrL"/>
+                    <constraint firstItem="fjg-W2-saq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FHi-b0-ewb"/>
+                    <constraint firstItem="eCv-4r-yqs" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="5" id="Knh-pa-9ET"/>
+                    <constraint firstItem="eCv-4r-yqs" firstAttribute="bottom" secondItem="yIM-fi-rrs" secondAttribute="bottom" id="MFn-RN-GsM"/>
+                    <constraint firstItem="yIM-fi-rrs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="McD-fr-vc0"/>
+                    <constraint firstItem="fjg-W2-saq" firstAttribute="top" secondItem="yIM-fi-rrs" secondAttribute="top" id="NOc-hh-SlO"/>
+                    <constraint firstItem="I3x-GD-AJ5" firstAttribute="bottom" secondItem="yIM-fi-rrs" secondAttribute="bottom" id="Ng5-na-j73"/>
+                    <constraint firstItem="I3x-GD-AJ5" firstAttribute="top" secondItem="yIM-fi-rrs" secondAttribute="top" id="SJO-ad-eff"/>
+                    <constraint firstItem="eCv-4r-yqs" firstAttribute="leading" secondItem="I3x-GD-AJ5" secondAttribute="trailing" constant="5" id="drU-C1-Xb0"/>
+                    <constraint firstItem="fjg-W2-saq" firstAttribute="bottom" secondItem="yIM-fi-rrs" secondAttribute="bottom" id="l3E-QP-sDP"/>
+                    <constraint firstItem="eCv-4r-yqs" firstAttribute="top" secondItem="yIM-fi-rrs" secondAttribute="top" id="rQ8-73-N3z"/>
+                    <constraint firstItem="yIM-fi-rrs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="tQ6-2f-2a7"/>
+                    <constraint firstItem="fjg-W2-saq" firstAttribute="leading" secondItem="yIM-fi-rrs" secondAttribute="trailing" constant="5" id="xPZ-qp-ec8"/>
+                    <constraint firstItem="eCv-4r-yqs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yxH-Uz-yEH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="588" y="503"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CheckBox_Unselected" width="30" height="30"/>
+        <image name="Delete" width="20" height="20"/>
+        <image name="Edit" width="20" height="20"/>
+    </resources>
+</document>
