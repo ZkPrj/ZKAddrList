@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -12,6 +13,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VBc-VN-Yxh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="w92-us-gXM" kind="relationship" relationship="rootViewController" id="wXg-H1-JeS"/>
@@ -34,16 +36,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Xpr-1e-r4D">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="466"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAg-KW-hbq">
+                                <rect key="frame" x="20" y="545" width="560" height="45"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.13081891449999999" blue="0.15734858330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="新建地址" image="Add"/>
+                                <connections>
+                                    <action selector="addNewAddr:" destination="w92-us-gXM" eventType="touchUpInside" id="0RA-FH-9X2"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.91589727365609375" green="0.91589727365609375" blue="0.91589727365609375" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Xpr-1e-r4D" secondAttribute="bottom" id="EQY-u0-QFG"/>
+                            <constraint firstAttribute="trailing" secondItem="rAg-KW-hbq" secondAttribute="trailing" constant="20" id="56o-Xi-1QM"/>
+                            <constraint firstItem="ySr-mZ-hSe" firstAttribute="top" secondItem="rAg-KW-hbq" secondAttribute="bottom" constant="10" id="6CY-xp-GRy"/>
+                            <constraint firstAttribute="bottom" secondItem="Xpr-1e-r4D" secondAttribute="bottom" constant="70" id="EQY-u0-QFG"/>
                             <constraint firstAttribute="trailing" secondItem="Xpr-1e-r4D" secondAttribute="trailing" id="JsV-nT-2nD"/>
                             <constraint firstItem="Xpr-1e-r4D" firstAttribute="top" secondItem="axs-pQ-yBw" secondAttribute="bottom" id="ipc-37-2wA"/>
+                            <constraint firstItem="rAg-KW-hbq" firstAttribute="top" secondItem="Xpr-1e-r4D" secondAttribute="bottom" constant="15" id="oCD-4f-pAn"/>
                             <constraint firstItem="Xpr-1e-r4D" firstAttribute="leading" secondItem="36U-GJ-7J9" secondAttribute="leading" id="uZW-mc-Hqg"/>
+                            <constraint firstItem="rAg-KW-hbq" firstAttribute="leading" secondItem="36U-GJ-7J9" secondAttribute="leading" constant="20" id="v7n-y3-2v1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iWc-cy-gue"/>
@@ -59,7 +75,7 @@
         <!--Addr Detail View Controller-->
         <scene sceneID="Ir0-cI-wPP">
             <objects>
-                <viewController id="1n6-W8-AfZ" customClass="AddrDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddrDetail" id="1n6-W8-AfZ" customClass="AddrDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2pU-vJ-DKi"/>
                         <viewControllerLayoutGuide type="bottom" id="fpw-4u-SeD"/>
@@ -68,23 +84,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CPe-ua-F75">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="CPe-ua-F75">
+                                <rect key="frame" x="0.0" y="64" width="600" height="466"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buR-4c-ox8">
+                                <rect key="frame" x="70" y="545" width="460" height="45"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.13081891449999999" blue="0.15734858330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="SaveAddr:" destination="1n6-W8-AfZ" eventType="touchUpInside" id="ldE-2i-XSN"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.91757417929292928" green="0.91757417929292928" blue="0.91757417929292928" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="CPe-ua-F75" secondAttribute="bottom" id="CVx-c3-frY"/>
+                            <constraint firstItem="buR-4c-ox8" firstAttribute="leading" secondItem="kcc-fS-a1W" secondAttribute="leadingMargin" constant="50" id="0dL-ui-P4x"/>
+                            <constraint firstItem="buR-4c-ox8" firstAttribute="top" secondItem="CPe-ua-F75" secondAttribute="bottom" constant="15" id="2Zk-vk-2xM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="buR-4c-ox8" secondAttribute="trailing" constant="50" id="8jg-J6-kYX"/>
+                            <constraint firstAttribute="bottom" secondItem="CPe-ua-F75" secondAttribute="bottom" constant="70" id="CVx-c3-frY"/>
                             <constraint firstAttribute="trailing" secondItem="CPe-ua-F75" secondAttribute="trailing" id="Ffw-Ff-yah"/>
                             <constraint firstItem="CPe-ua-F75" firstAttribute="top" secondItem="2pU-vJ-DKi" secondAttribute="bottom" id="IJ3-Jd-fJv"/>
+                            <constraint firstItem="fpw-4u-SeD" firstAttribute="top" secondItem="buR-4c-ox8" secondAttribute="bottom" constant="10" id="OH4-TW-by5"/>
                             <constraint firstItem="CPe-ua-F75" firstAttribute="leading" secondItem="kcc-fS-a1W" secondAttribute="leading" id="TGL-kG-dE0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userAddrTableView" destination="CPe-ua-F75" id="HMR-ZY-NKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Bf-wE-82f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1409" y="620"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Add" width="28" height="28"/>
+    </resources>
 </document>

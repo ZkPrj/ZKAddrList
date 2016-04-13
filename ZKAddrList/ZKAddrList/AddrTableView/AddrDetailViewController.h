@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddrDataModel.h"
+
+@protocol AddrDetailViewControllerDelegate <NSObject>
+
+-(void)fetchNewAddr:(AddrDataModel*)dataModel;
+
+@end
 
 @interface AddrDetailViewController : UIViewController
-
+@property (nonatomic,weak) id<AddrDetailViewControllerDelegate> delegate;
+-(void)setUpViewContent:(AddrDataModel*)dataModel;
 @end
 	

@@ -20,4 +20,21 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)editAddr:(UIButton *)sender {
+    if (self.delegate) {
+        [self.delegate onAddrEditWithIndex:self.index];
+    }
+}
+
+- (IBAction)delAddr:(UIButton *)sender {
+    if (self.delegate) {
+        [self.delegate onAddrDelWithIndex:self.index];
+    }
+}
+
+- (IBAction)setDefaultAddr:(UIButton *)sender {
+    if (self.delegate) {
+        [self.delegate onSetDefaultAddrWithIndex:self.index];
+    }
+}
 @end

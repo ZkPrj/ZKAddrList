@@ -21,6 +21,10 @@
 		2680AF331CBD63BA00B12AD0 /* AddrDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF321CBD63BA00B12AD0 /* AddrDataModel.m */; };
 		2680AF3A1CBD672100B12AD0 /* AddrListEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF381CBD672100B12AD0 /* AddrListEditTableViewCell.m */; };
 		2680AF3B1CBD672100B12AD0 /* AddrListEditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2680AF391CBD672100B12AD0 /* AddrListEditTableViewCell.xib */; };
+		2680AF3F1CBDE77E00B12AD0 /* LblTxtTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF3D1CBDE77E00B12AD0 /* LblTxtTableViewCell.m */; };
+		2680AF401CBDE77E00B12AD0 /* LblTxtTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2680AF3E1CBDE77E00B12AD0 /* LblTxtTableViewCell.xib */; };
+		2680AF491CBDEA5900B12AD0 /* LblLblTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680AF471CBDEA5900B12AD0 /* LblLblTableViewCell.m */; };
+		2680AF4A1CBDEA5900B12AD0 /* LblLblTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2680AF481CBDEA5900B12AD0 /* LblLblTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,12 @@
 		2680AF371CBD672100B12AD0 /* AddrListEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddrListEditTableViewCell.h; path = AddrTableView/AddrListEditTableViewCell.h; sourceTree = "<group>"; };
 		2680AF381CBD672100B12AD0 /* AddrListEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddrListEditTableViewCell.m; path = AddrTableView/AddrListEditTableViewCell.m; sourceTree = "<group>"; };
 		2680AF391CBD672100B12AD0 /* AddrListEditTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddrListEditTableViewCell.xib; path = AddrTableView/AddrListEditTableViewCell.xib; sourceTree = "<group>"; };
+		2680AF3C1CBDE77E00B12AD0 /* LblTxtTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LblTxtTableViewCell.h; path = AddrTableView/LblTxtTableViewCell.h; sourceTree = "<group>"; };
+		2680AF3D1CBDE77E00B12AD0 /* LblTxtTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LblTxtTableViewCell.m; path = AddrTableView/LblTxtTableViewCell.m; sourceTree = "<group>"; };
+		2680AF3E1CBDE77E00B12AD0 /* LblTxtTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LblTxtTableViewCell.xib; path = AddrTableView/LblTxtTableViewCell.xib; sourceTree = "<group>"; };
+		2680AF461CBDEA5900B12AD0 /* LblLblTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LblLblTableViewCell.h; path = AddrTableView/LblLblTableViewCell.h; sourceTree = "<group>"; };
+		2680AF471CBDEA5900B12AD0 /* LblLblTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LblLblTableViewCell.m; path = AddrTableView/LblLblTableViewCell.m; sourceTree = "<group>"; };
+		2680AF481CBDEA5900B12AD0 /* LblLblTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LblLblTableViewCell.xib; path = AddrTableView/LblLblTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +169,9 @@
 		2680AF141CBD538200B12AD0 /* AddrTableView */ = {
 			isa = PBXGroup;
 			children = (
+				2680AF461CBDEA5900B12AD0 /* LblLblTableViewCell.h */,
+				2680AF471CBDEA5900B12AD0 /* LblLblTableViewCell.m */,
+				2680AF481CBDEA5900B12AD0 /* LblLblTableViewCell.xib */,
 				2680AF371CBD672100B12AD0 /* AddrListEditTableViewCell.h */,
 				2680AF381CBD672100B12AD0 /* AddrListEditTableViewCell.m */,
 				2680AF391CBD672100B12AD0 /* AddrListEditTableViewCell.xib */,
@@ -169,6 +182,9 @@
 				2680AF241CBD58B300B12AD0 /* AddrListTableViewCell.h */,
 				2680AF251CBD58B300B12AD0 /* AddrListTableViewCell.m */,
 				2680AF261CBD58B300B12AD0 /* AddrListTableViewCell.xib */,
+				2680AF3C1CBDE77E00B12AD0 /* LblTxtTableViewCell.h */,
+				2680AF3D1CBDE77E00B12AD0 /* LblTxtTableViewCell.m */,
+				2680AF3E1CBDE77E00B12AD0 /* LblTxtTableViewCell.xib */,
 			);
 			name = AddrTableView;
 			sourceTree = "<group>";
@@ -288,7 +304,9 @@
 				2680AF3B1CBD672100B12AD0 /* AddrListEditTableViewCell.xib in Resources */,
 				2680AF281CBD58B300B12AD0 /* AddrListTableViewCell.xib in Resources */,
 				2680AEF11CBD501300B12AD0 /* LaunchScreen.storyboard in Resources */,
+				2680AF401CBDE77E00B12AD0 /* LblTxtTableViewCell.xib in Resources */,
 				2680AEEE1CBD501300B12AD0 /* Assets.xcassets in Resources */,
+				2680AF4A1CBDEA5900B12AD0 /* LblLblTableViewCell.xib in Resources */,
 				2680AEEC1CBD501300B12AD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,11 +332,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2680AF491CBDEA5900B12AD0 /* LblLblTableViewCell.m in Sources */,
 				2680AF231CBD560A00B12AD0 /* AddrDetailViewController.m in Sources */,
 				2680AF271CBD58B300B12AD0 /* AddrListTableViewCell.m in Sources */,
 				2680AF1A1CBD544700B12AD0 /* AddrListViewController.m in Sources */,
 				2680AEE61CBD501300B12AD0 /* AppDelegate.m in Sources */,
 				2680AF331CBD63BA00B12AD0 /* AddrDataModel.m in Sources */,
+				2680AF3F1CBDE77E00B12AD0 /* LblTxtTableViewCell.m in Sources */,
 				2680AF3A1CBD672100B12AD0 /* AddrListEditTableViewCell.m in Sources */,
 				2680AEE31CBD501300B12AD0 /* main.m in Sources */,
 			);

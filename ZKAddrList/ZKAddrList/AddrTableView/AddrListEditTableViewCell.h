@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddrListEditTableViewCell : UITableViewCell
+@protocol AddrListEditTableViewCellDelegate <NSObject>
 
+-(void)onAddrDelWithIndex:(NSInteger)index;
+-(void)onAddrEditWithIndex:(NSInteger)index;
+-(void)onSetDefaultAddrWithIndex:(NSInteger)index;
+@end
+
+@interface AddrListEditTableViewCell : UITableViewCell
+@property (nonatomic) NSInteger index;
+@property (nonatomic,weak) id<AddrListEditTableViewCellDelegate> delegate;
 @end

@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AddrDataModel : NSObject
+@interface AddrDataModel : NSObject<NSCoding>
 @property (nonatomic,copy) NSString* name;
 @property (nonatomic,copy) NSString* telphone;
 @property (nonatomic,copy) NSString* detailAddr;
+@property (nonatomic,copy) NSString* areaStr;
 @end
